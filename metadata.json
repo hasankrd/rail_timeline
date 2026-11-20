@@ -1,0 +1,6 @@
+{
+  "name": "Istanbul Metro & Rail Timeline - Public Transport Railway Systems",
+  "description": "Explore Istanbul and Turkiye public transport railway systems through time from 1875 historic Tünel and March 1989 inaugural M1 metro opening to today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
