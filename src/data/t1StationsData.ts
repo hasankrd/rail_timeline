@@ -1,0 +1,800 @@
+import { StationDetail } from './m1StationsData';
+
+export const T1_STATIONS_DATA: Record<string, StationDetail> = {
+  'yusufpaşa': {
+    id: 'yusufpasa',
+    name: 'Yusufpaşa Station',
+    cleanName: 'Yusufpaşa',
+    turkishName: 'Yusufpaşa İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Aksaray / Muratpaşa)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '13 Haziran 1992',
+    openedDateFormatted: '06-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yusufpa%C5%9Fa_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Yusufpaşa T1 Tramvay İstasyonu ve M1 Aksaray aktarma koridoru',
+    description: 'T1 hattının 13 Haziran 1992’de hizmete giren orijinal batı başlangıç terminalidir. M1 Aksaray metro istasyonuna en yakın yaya aktarma noktasıdır.',
+    historicalContext: 'Beyazıt–Yusufpaşa arasındaki 3.5 kilometrelik ilk etapla birlikte açılmıştır. İstanbul’da Osmanlı ve Cumhuriyet döneminden sonra modern cadde tramvaycılığının miladı olmuştur.',
+    features: ['Turnike Geçişleri', 'İstanbulkart Dolum Otomatları', 'M1 Aksaray Metro Yaya Geçişi', 'Engelli Rampası'],
+    interchanges: [
+      {
+        lineCode: 'M1A / M1B',
+        lineName: 'M1 Yenikapı – Atatürk Havalimanı / Kirazlı Metro Hattı',
+        type: 'metro',
+        color: '#EE2229',
+        stationName: 'Aksaray Metro İstasyonu',
+        transferType: 'Cadde / Üstgeçit Yürüyüşü',
+        distance: '200m',
+        walkingTime: '~3 dk yürüme',
+        description: 'Adnan Menderes (Vatan) Bulvarı üzerinden kısa yaya bağlantısıyla M1 Aksaray metro istasyonuna doğrudan aktarma.'
+      }
+    ]
+  },
+  'aksaray': {
+    id: 'aksaray-t1',
+    name: 'Aksaray Station (T1)',
+    cleanName: 'Aksaray',
+    turkishName: 'Aksaray Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Aksaray Meydanı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '13 Haziran 1992',
+    openedDateFormatted: '06-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Aksaray_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Aksaray T1 Tramvay İstasyonu ve Valide Sultan Camii silüeti',
+    description: 'Tarihi Pertevniyal Valide Sultan Camii’nin karşısında, Aksaray Meydanı’nın hemen girişinde yer alan hemzemin tramvay durağıdır.',
+    historicalContext: '13 Haziran 1992’de açılan ilk etabın en işlek duraklarındandır. Ordu Caddesi boyunca yayalaştırılmış tramvay aksının kalbinde yer alır.',
+    features: ['Valide Sultan Camii Çıkışı', 'Ordu Caddesi Yaya Yolu', 'Engelli Rampaları', 'Elektronik Bilgilendirme'],
+    interchanges: [
+      {
+        lineCode: 'M1A / M1B',
+        lineName: 'M1 Yenikapı – Atatürk Havalimanı / Kirazlı Metro Hattı',
+        type: 'metro',
+        color: '#EE2229',
+        stationName: 'Aksaray Metro İstasyonu',
+        transferType: 'Cadde / Üstgeçit Yürüyüşü',
+        distance: '320m',
+        walkingTime: '~4 dk yürüme',
+        description: 'Aksaray yeraltı çarşısı ve üstgeçitler üzerinden M1 Aksaray metro istasyonuna yaya yürüyüşü.'
+      }
+    ]
+  },
+  'laleli - istanbul universitesi': {
+    id: 'laleli-istanbul-universitesi',
+    name: 'Laleli - İstanbul Üniversitesi Station',
+    cleanName: 'Laleli - İstanbul Üniversitesi',
+    turkishName: 'Laleli - İstanbul Üniversitesi İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Laleli / Kemalpaşa)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '13 Haziran 1992',
+    openedDateFormatted: '06-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Laleli_-_%C4%B0stanbul_%C3%9Cniversitesi_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Laleli - İstanbul Üniversitesi İstasyonu Ordu Caddesi üzerindeki peronları',
+    description: 'İstanbul Üniversitesi’nin tarihi fakülteleri, Laleli Camii ve uluslararası hazır giyim ticaret merkezinin ortasında yer alır.',
+    historicalContext: '13 Haziran 1992’de hizmete girmiştir. 2014 yılında M2 metro hattının Vezneciler istasyonunun açılmasıyla önemli bir raylı sistem entegrasyon noktası haline gelmiştir.',
+    features: ['M2 Vezneciler Metrosu Yaya Yolu', 'Üniversite Fakülteleri Girişi', 'Laleli Ticaret Çarşısı Erişimi', 'Turnike Kontrolü'],
+    interchanges: [
+      {
+        lineCode: 'M2',
+        lineName: 'M2 Yenikapı – Hacıosman Metro Hattı',
+        type: 'metro',
+        color: '#059A4D',
+        stationName: 'Vezneciler - İstanbul Üniversitesi İstasyonu',
+        transferType: 'Cadde / Üstgeçit Yürüyüşü',
+        distance: '180m',
+        walkingTime: '~2.5 dk yürüme',
+        description: '16 Mart Şehitleri Caddesi üzerinden M2 Vezneciler metro istasyonuna doğrudan yaya aktarması. Taksim, Şişli ve Levent yönü.'
+      }
+    ]
+  },
+  'beyazit - kapalicarsi': {
+    id: 'beyazit-kapalicarsi',
+    name: 'Beyazıt - Kapalıçarşı Station',
+    cleanName: 'Beyazıt - Kapalıçarşı',
+    turkishName: 'Beyazıt - Kapalıçarşı İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Beyazıt Meydanı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '13 Haziran 1992',
+    openedDateFormatted: '06-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beyaz%C4%B1t_-_Kapal%C4%B1%C3%A7ar%C5%9F%C4%B1_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Beyazıt - Kapalıçarşı İstasyonu tarihi Beyazıt Meydanı peronları',
+    description: '13 Haziran 1992’de açılan ilk etabın doğu uç terminaliydi. Tarihi Kapalıçarşı’nın Beyazıt Kapısı ve İstanbul Üniversitesi tarihi ana kapısının tam önündedir.',
+    historicalContext: 'İstanbul’un simge meydanlarından Beyazıt Meydanı’nda raylı sistem çağını başlatan istasyondur. Temmuz 1992’de hat Sirkeci’ye uzatılana kadar 1 ay boyunca hat son durağı olarak hizmet vermiştir.',
+    features: ['Kapalıçarşı Doğrudan Girişi', 'İstanbul Üniversitesi Rektörlük Kapısı', 'Sahaflar Çarşısı Yakınlığı', 'Tarihi Beyazıt Camii Çıkışı'],
+    interchanges: []
+  },
+  'cemberlitas': {
+    id: 'cemberlitas',
+    name: 'Çemberlitaş Station',
+    cleanName: 'Çemberlitaş',
+    turkishName: 'Çemberlitaş İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Divan Yolu Caddesi)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Temmuz 1992',
+    openedDateFormatted: '07-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87emberlita%C5%9F_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Çemberlitaş Sütunu ve Nuruosmaniye Camii yanındaki T1 peronu',
+    description: 'Roma İmparatoru I. Konstantin onuruna MS 330 yılında dikilen Çemberlitaş Sütunu’nun ve Tarihi Çemberlitaş Hamamı’nın hemen yanında konumlanmıştır.',
+    historicalContext: '10 Temmuz 1992’de Beyazıt–Sirkeci uzatmasıyla hizmete girmiştir. Tarihi Divan Yolu boyunca ilerleyen tramvay güzergahının en ikonik duraklarındandır.',
+    features: ['Tarihi Konstantin Sütunu Yanı', 'Nuruosmaniye Kapalıçarşı Girişi', 'Tarihi Hamam Çıkışı', 'Yaya Bölgesi Peronu'],
+    interchanges: []
+  },
+  'sultanahmet': {
+    id: 'sultanahmet',
+    name: 'Sultanahmet Station',
+    cleanName: 'Sultanahmet',
+    turkishName: 'Sultanahmet İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Sultanahmet Meydanı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Temmuz 1992',
+    openedDateFormatted: '07-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sultanahmet_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Sultanahmet Meydanı, Ayasofya ve Sultanahmet Camii önündeki T1 İstasyonu',
+    description: 'İstanbul’un ve Türkiye’nin en çok ziyaret edilen turistik raylı sistem durağıdır. Ayasofya-i Kebir Cami-i Şerifi, Sultanahmet Camii, Yerebatan Sarnıcı ve İbrahim Paşa Sarayı’na açılır.',
+    historicalContext: '10 Temmuz 1992’de açılmıştır. Dünyanın en önemli tarihi merkezlerinden biri olan Sultanahmet Meydanı’nın yaya öncelikli hale getirilmesinde kritik rol oynamıştır.',
+    features: ['Ayasofya & Sultanahmet Doğrudan Girişi', 'Yerebatan Sarnıcı Çıkışı', 'Hipodrom Meydanı Erişimi', 'Çok Dilli Turist Bilgilendirme'],
+    interchanges: []
+  },
+  'gulhane': {
+    id: 'gulhane',
+    name: 'Gülhane Station',
+    cleanName: 'Gülhane',
+    turkishName: 'Gülhane İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Alemdar / Sarayburnu)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Temmuz 1992',
+    openedDateFormatted: '07-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/G%C3%BClhane_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Gülhane Parkı Alay Köşkü ve Topkapı Sarayı Bab-ı Hümayun kapısı önü',
+    description: 'Tarihi Gülhane Parkı’nın ana kapısının, Alay Köşkü’nün ve Topkapı Sarayı dış surlarının hemen karşısında yer alır.',
+    historicalContext: '10 Temmuz 1992 tarihinde hizmete alınmıştır. Arkeoloji Müzeleri ve İslam Bilim ve Teknoloji Tarihi Müzesi’ne en yakın raylı sistem durağıdır.',
+    features: ['Gülhane Parkı Ana Kapısı', 'Topkapı Sarayı ve Arkeoloji Müzesi Yolu', 'Alay Köşkü Çıkışı', 'Geniş Yaya Koridoru'],
+    interchanges: []
+  },
+  'sirkeci': {
+    id: 'sirkeci',
+    name: 'Sirkeci Station',
+    cleanName: 'Sirkeci',
+    turkishName: 'Sirkeci İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Sirkeci Sahil / Gar Meydanı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Temmuz 1992',
+    openedDateFormatted: '07-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sirkeci_station_Istanbul.jpg?width=1000',
+    imageCaption: 'Tarihi Sirkeci Garı önündeki T1 Sirkeci İstasyonu ve Marmaray bağlantısı',
+    description: 'Tarihi Şark Ekspresi (Orient Express) terminali olan Sirkeci Garı önünde, Marmaray Boğaz tüp geçidine ve vapur iskelelerine bağlanan devasa entegre raylı sistem merkezidir.',
+    historicalContext: '10 Temmuz 1992’de Beyazıt–Sirkeci etabının son durağı olarak açıldı. 2013 yılında Marmaray yeraltı garının açılmasıyla kıtalararası en önemli raylı aktarma düğümü olmuştur.',
+    features: ['Marmaray Yeraltı Garı Doğrudan Bağlantısı', 'Tarihi Sirkeci Garı Çıkışı', 'Eminönü Vapur İskeleleri Yakınlığı', 'Şehir Hatları Erişimi'],
+    interchanges: [
+      {
+        lineCode: 'Marmaray',
+        lineName: 'Marmaray Banliyö Tren Hattı (Halkalı – Gebze)',
+        type: 'rail',
+        color: '#65656A',
+        stationName: 'Sirkeci Yeraltı Garı',
+        transferType: 'Yeraltı Bağlantı Tüneli',
+        distance: '60m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Tarihi Sirkeci Garı içindeki doğrudan yeraltı turnike holünden Boğaz altından Asya ve Avrupa kıtalarını kesintisiz bağlayan Marmaray banliyö trenine geçiş.'
+      }
+    ]
+  },
+  'eminönü': {
+    id: 'eminonu',
+    name: 'Eminönü Station',
+    cleanName: 'Eminönü',
+    turkishName: 'Eminönü İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Eminönü Meydanı / Haliç Sahili)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '20 Nisan 1996',
+    openedDateFormatted: '04-1996',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emin%C3%B6n%C3%BC_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Tarihi Eminönü Meydanı, Yeni Cami ve Galata Köprüsü önündeki T1 İstasyonu',
+    description: 'Tarihi Yarımada ile Haliç’in buluştuğu noktada, Tarihi Mısır Çarşısı, Yeni Cami, Galata Köprüsü ve vapur iskelelerinin tam kalbinde yer alan simge tramvay istasyonudur.',
+    historicalContext: '20 Nisan 1996 tarihinde Sirkeci–Eminönü uzatmasıyla hizmete açılmıştır. Tramvay hattını Haliç sahilindeki deniz ulaşımına ve vapur iskelelerine bağlamıştır. 2023 yılında T5 Alibeyköy tramvayının buraya uzatılmasıyla çift hatlı raylı aktarma merkezine dönüşmüştür.',
+    features: ['T5 Tramvayına Doğrudan Geçiş', 'Şehir Hatları Vapur İskeleleri Karşısı', 'Mısır Çarşısı & Yeni Cami Çıkışı', 'Galata Köprüsü Yaya Yolu'],
+    interchanges: [
+      {
+        lineCode: 'T5',
+        lineName: 'T5 Eminönü – Alibeyköy Cep Otogarı Tramvay Hattı',
+        type: 'tram',
+        color: '#7B72B2',
+        stationName: 'Eminönü T5 İstasyonu',
+        transferType: 'Doğrudan Peron',
+        distance: '50m (Doğrudan Peron)',
+        walkingTime: '~1 dk yürüme',
+        description: 'Eminönü Meydanı boyunca kısa hemzemin yürüyüşle Haliç kıyısı boyunca Eyüpsultan ve Alibeyköy yönüne giden T5 tramvay hattına doğrudan aktarma.'
+      }
+    ]
+  },
+  'karaköy': {
+    id: 'karakoy',
+    name: 'Karaköy Station',
+    cleanName: 'Karaköy',
+    turkishName: 'Karaköy Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Beyoğlu (Karaköy Meydanı / Kemeraltı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '30 Ocak 2005',
+    openedDateFormatted: '01-2005',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Karak%C3%B6y_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Galata Köprüsü kuzey ayağındaki Karaköy T1 İstasyonu',
+    description: 'Galata Köprüsü’nün Beyoğlu ayağında, tarihi Karaköy Meydanı, Bankalar Caddesi ve vapur iskelelerinin buluştuğu noktada yer alan merkezi istasyondur.',
+    historicalContext: '30 Ocak 2005 tarihinde Galata Köprüsü üzerinden geçen Eminönü–Fındıklı uzatmasıyla açılmıştır. Tarihi Yarımada ile Beyoğlu’nu raylı sistemle birbirine bağlayan köprü geçişinin ilk durağıdır.',
+    features: ['F2 Tarihi Tünel Füniküleri Aktarması', 'Karaköy Vapur İskelesi Yakınlığı', 'Galata Kulesi & Bankalar Caddesi İnişi', 'Galata Köprüsü Yaya Yolu'],
+    interchanges: [
+      {
+        lineCode: 'F2',
+        lineName: 'F2 Karaköy – Beyoğlu Tarihi Tünel Hattı',
+        type: 'funicular',
+        color: '#7A745A',
+        stationName: 'Tünel Karaköy İstasyonu',
+        transferType: 'Cadde / Meydan Çıkışı',
+        distance: '60m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Meydandan 1875 yapımı dünyanın en eski ikinci metrosu olan Tarihi Tünel’e geçiş.'
+      }
+    ]
+  },
+  'tophane': {
+    id: 'tophane',
+    name: 'Tophane Station',
+    cleanName: 'Tophane',
+    turkishName: 'Tophane Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Beyoğlu (Tophane / Galataport)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '30 Ocak 2005',
+    openedDateFormatted: '01-2005',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tophane_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Tophane Çeşmesi, Kılıç Ali Paşa Camii ve Galataport önündeki durak',
+    description: 'Tarihi Tophane-i Âmire, Kılıç Ali Paşa Külliyesi, Tophane Kasrı ve modern Galataport İstanbul kruvaziyer limanına hizmet veren sahil durağıdır.',
+    historicalContext: '30 Ocak 2005 tarihinde açılmıştır. Beyoğlu sahilinin tarihi ve kültürel anıtlarına hızlı ve konforlu raylı erişim sunmaktadır.',
+    features: ['Galataport İstanbul Kruvaziyer Limanı Çıkışı', 'İstanbul Modern Sanat Müzesi Erişimi', 'Tarihi Kılıç Ali Paşa Camii & Hamamı', 'Tophane Saat Kulesi Meydanı'],
+    interchanges: []
+  },
+  'fındıklı - mimar sinan üniversitesi': {
+    id: 'findikli-msgu',
+    name: 'Fındıklı - Mimar Sinan Üniversitesi Station',
+    cleanName: 'Fındıklı - MSGSÜ',
+    turkishName: 'Fındıklı - Mimar Sinan Güzel Sanatlar Üniversitesi İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Beyoğlu (Fındıklı / Ömer Avni / Meclis-i Mebusan)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '30 Ocak 2005',
+    openedDateFormatted: '01-2005',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/F%C4%B1nd%C4%B1kl%C4%B1_-_Mimar_Sinan_%C3%9Cniversitesi_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Mimar Sinan Güzel Sanatlar Üniversitesi ve Fındıklı Parkı önündeki T1 İstasyonu',
+    description: 'Meclis-i Mebusan Caddesi üzerinde, Türkiye’nin en köklü sanat okulu MSGSÜ Fındıklı Yerleşkesi ve Fındıklı Parkı’nın tam önünde yer alan Boğaz manzaralı istasyondur.',
+    historicalContext: '30 Ocak 2005 tarihinde hizmete açılmıştır. Haziran 2006’da hat Kabataş’a uzatılana kadar 1.5 yıl boyunca T1 tramvayının kuzey terminali olarak kullanılmıştır.',
+    features: ['MSGSÜ Fındıklı Ana Girişi', 'Fındıklı Parkı ve Boğaz Sahili', 'Geniş Yaya Kaldırımları', 'Engelli Erişilebilir Peronlar'],
+    interchanges: []
+  },
+  'fındıklı': {
+    id: 'findikli',
+    name: 'Fındıklı Station',
+    cleanName: 'Fındıklı',
+    turkishName: 'Fındıklı Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Beyoğlu (Fındıklı / Ömer Avni)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '30 Ocak 2005',
+    openedDateFormatted: '01-2005',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/F%C4%B1nd%C4%B1kl%C4%B1_-_Mimar_Sinan_%C3%9Cniversitesi_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Fındıklı Parkı ve MSGSÜ önündeki T1 İstasyonu',
+    description: 'Meclis-i Mebusan Caddesi üzerinde Fındıklı Parkı ve Mimar Sinan Güzel Sanatlar Üniversitesi yerleşkesine hizmet veren tramvay durağıdır.',
+    historicalContext: '30 Ocak 2005 tarihinde Eminönü–Fındıklı uzatmasıyla hizmete girmiştir.',
+    features: ['MSGSÜ Fındıklı Yerleşkesi', 'Fındıklı Sahil Parkı', 'Boğaz Manzarası'],
+    interchanges: []
+  },
+  'kabataş': {
+    id: 'kabatas-t1',
+    name: 'Kabataş Station',
+    cleanName: 'Kabataş',
+    turkishName: 'Kabataş Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Beyoğlu (Kabataş Sahili / Meclis-i Mebusan Caddesi)',
+    structureType: 'Hemzemin (Terminal / Makaslı Son İstasyon)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '29 Haziran 2006',
+    openedDateFormatted: '06-2006',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kabata%C5%9F_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'T1 hattının kuzeydoğu başlangıç terminali olan Kabataş İstasyonu',
+    description: 'T1 Kabataş–Bağcılar hattının Boğaziçi kıyısındaki modern terminalidir. F1 Taksim füniküleri ve Şehir Hatları vapur iskeleleriyle entegre devasa bir aktarma merkezidir.',
+    historicalContext: '29 Haziran 2006 tarihinde Fındıklı–Kabataş uzatmasıyla hizmete girmiştir. F1 füniküleri ile eş zamanlı açılarak Boğaz deniz hatları ile Taksim metrosunu ve Tarihi Yarımada tramvayını buluşturmuştur.',
+    features: ['F1 Taksim Füniküleri Doğrudan Geçiş', 'Kabataş Vapur İskeleleri Karşısı', 'Boğaziçi Sahil Kordonu', 'Geniş Peron ve Engelli Rampaları'],
+    interchanges: [
+      {
+        lineCode: 'F1',
+        lineName: 'F1 Taksim – Kabataş Füniküler Hattı',
+        type: 'funicular',
+        color: '#7A745A',
+        stationName: 'Kabataş Füniküler İstasyonu',
+        transferType: 'Doğrudan Yeraltı Girişi',
+        distance: '30m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Peron çıkışından merdiven veya asansörle yeraltı füniküler bilet holüne inerek 2.5 dakikada Taksim Meydanı’na çıkış.'
+      },
+      {
+        lineCode: 'Ferry',
+        lineName: 'Şehir Hatları & İDO Vapur Hatları (Kadıköy, Üsküdar, Adalar)',
+        type: 'rail',
+        color: '#0284c7',
+        stationName: 'Kabataş İskelesi',
+        transferType: 'Cadde / Sahil Geçişi',
+        distance: '40m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Trafik ışıklı yaya geçidiyle doğrudan Adalar, Kadıköy ve Üsküdar iskelelerine ulaşım.'
+      }
+    ]
+  },
+  'haseki': {
+    id: 'haseki',
+    name: 'Haseki Station',
+    cleanName: 'Haseki',
+    turkishName: 'Haseki İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Haseki Sultan / Millet Caddesi)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '29 Aralık 1992',
+    openedDateFormatted: '12-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Haseki_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Millet Caddesi refüjündeki Haseki T1 Tramvay İstasyonu',
+    description: 'Turgut Özal (Millet) Caddesi üzerinde, tarihi Haseki Eğitim ve Araştırma Hastanesi ile Haseki Külliyesi’ne hizmet veren hemzemin duraktır.',
+    historicalContext: '29 Aralık 1992’de açılan Yusufpaşa–Topkapı uzatması kapsamında hizmete girmiştir. Sağlık kurumlarına hızlı ve engelsiz ulaşım sağlamıştır.',
+    features: ['Haseki Hastanesi Çıkışı', 'Millet Caddesi Yaya Geçidi', 'Engelli Rampaları', 'İstanbulkart Dolum'],
+    interchanges: []
+  },
+  'fındıkzade': {
+    id: 'findikzade',
+    name: 'Fındıkzade Station',
+    cleanName: 'Fındıkzade',
+    turkishName: 'Fındıkzade İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Fındıkzade Kavşağı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '29 Aralık 1992',
+    openedDateFormatted: '12-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/F%C4%B1nd%C4%B1kzade_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Fındıkzade İstasyonu ve Millet Caddesi alışveriş aksı',
+    description: 'Fatih’in en yoğun ticari kavşaklarından biri olan Fındıkzade Meydanı’nda yer alan merkezi tramvay durağıdır.',
+    historicalContext: '29 Aralık 1992 tarihinde açılmıştır. Millet Caddesi ile Kızılelma ve Oğuzhan caddelerinin birleşiminde yerel halk ve esnaf için ana arterdir.',
+    features: ['Fındıkzade Meydanı Çıkışı', 'Ticaret ve Mağazalar Aksı', 'Yaya Sinyalizasyon Geçişi', 'Engelli Erişimi'],
+    interchanges: []
+  },
+  'çapa - şehremini': {
+    id: 'capa-sehremini',
+    name: 'Çapa - Şehremini Station',
+    cleanName: 'Çapa - Şehremini',
+    turkishName: 'Çapa - Şehremini İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Şehremini / Çapa)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '29 Aralık 1992',
+    openedDateFormatted: '12-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87apa_-_%C5%9Eehremini_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'İstanbul Tıp Fakültesi (Çapa) ana girişi önündeki T1 istasyonu',
+    description: 'İstanbul Üniversitesi İstanbul Tıp Fakültesi (Çapa Tıp) ana yerleşkesi ile tarihi Şehremini semtine doğrudan hizmet veren yüksek yolcu kapasiteli duraktır.',
+    historicalContext: '29 Aralık 1992’de hizmete girdi. Günde on binlerce hastaya, tıp öğrencisine ve sağlık personeline kesintisiz raylı ulaşım sağlamaktadır.',
+    features: ['Çapa Tıp Fakültesi Doğrudan Girişi', 'Şehremini Meydan Çıkışı', 'Genişletilmiş Turnike Alanı', 'Tam Engelli Uyumluluğu'],
+    interchanges: []
+  },
+  'pazartekke': {
+    id: 'pazartekke',
+    name: 'Pazartekke Station',
+    cleanName: 'Pazartekke',
+    turkishName: 'Pazartekke İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Fatih (Topkapı İçi / Seyyid Ömer)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '29 Aralık 1992',
+    openedDateFormatted: '12-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pazartekke_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Pazartekke İstasyonu Millet Caddesi batı ucu peronları',
+    description: 'Tarihi suriçinin batı sınırında, Millet Caddesi’nin Topkapı surlarına bağlandığı mevkide yer alan hemzemin duraktır.',
+    historicalContext: '29 Aralık 1992’de açılmıştır. Suriçi Fatih mahallelerinin tarihi Topkapı surlarına açılan son durağıdır.',
+    features: ['Tarihi Suriçi Yerleşimi Çıkışı', 'Millet Caddesi Yaya Geçidi', 'Asansörlü Turnike Girişleri'],
+    interchanges: []
+  },
+  'topkapı': {
+    id: 'topkapi-t1',
+    name: 'Topkapı Station (T1)',
+    cleanName: 'Topkapı',
+    turkishName: 'Topkapı Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Zeytinburnu (Topkapı Surdışı / Şehir Parkı)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: 'Ada Peron ve Kenar Peron (3 Hat - Dönüş Makası)',
+    openedDate: '29 Aralık 1992',
+    openedDateFormatted: '12-1992',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkap%C4%B1_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Topkapı T1 ve T4 tramvay aktarma merkezi peronları',
+    description: 'T1 hattının 1992–1994 yılları arasındaki batı terminalidir. T4 tramvay hattına aynı meydan içinde doğrudan aktarma imkanı sunar.',
+    historicalContext: '29 Aralık 1992’de işletmeye açılmıştır. 2007 yılında T4 tramvay hattının hizmete girmesiyle birlikte İstanbul’un en önemli yüzey raylı aktarma merkezine dönüşmüştür.',
+    features: ['T4 Tramvay Hattına Doğrudan Geçiş', 'Topkapı Kültür Parkı Çıkışı', 'Panorama 1453 Tarih Müzesi Yakınlığı', 'Geniş Aktarma Meydanı'],
+    interchanges: [
+      {
+        lineCode: 'T4',
+        lineName: 'T4 Topkapı – Mescid-i Selam Tramvay Hattı',
+        type: 'tram',
+        color: '#FF7E42',
+        stationName: 'Topkapı T4 İstasyonu',
+        transferType: 'Doğrudan Peron',
+        distance: '0m (Doğrudan Peron)',
+        walkingTime: 'Anında (Aynı Meydan)',
+        description: 'Topkapı Aktarma Merkezi içinde T4 tramvay hattı kalkış peronlarına doğrudan geçiş. Edirnekapı ve Sultangazi yönü.'
+      },
+      {
+        lineCode: 'M1A / M1B',
+        lineName: 'M1 Yenikapı – Atatürk Havalimanı / Kirazlı Metro Hattı',
+        type: 'metro',
+        color: '#EE2229',
+        stationName: 'Topkapı - Ulubatlı İstasyonu',
+        transferType: 'Cadde / Üstgeçit Yürüyüşü',
+        distance: '400m',
+        walkingTime: '~5 dk yürüme',
+        description: 'Tarihi sur kapısı ve park koridoru üzerinden M1 Topkapı - Ulubatlı metro istasyonuna yaya yürüyüşü.'
+      }
+    ]
+  },
+  'cevizlibağ – a.ö.y.': {
+    id: 'cevizlibag-aoy',
+    name: 'Cevizlibağ – A.Ö.Y. Station',
+    cleanName: 'Cevizlibağ – A.Ö.Y.',
+    turkishName: 'Cevizlibağ – A.Ö.Y. İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Zeytinburnu (Cevizlibağ / D.100)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: 'Ada Peron (3 Hat - Depo ve Dönüş Hattı)',
+    openedDate: '10 Mart 1994',
+    openedDateFormatted: '03-1994',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cevizliba%C4%9F_-_A.%C3%96.Y._Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Cevizlibağ T1 İstasyonu, Atatürk Öğrenci Yurdu ve D.100 bağlantısı',
+    description: 'D.100 karayolunun kıyısında, Kredi Yurtlar Kurumu Atatürk Öğrenci Yurdu yerleşkesi ve çok sayıda üniversite kampüsünün kavşağında yer alan devasa transfer istasyonudur.',
+    historicalContext: '10 Mart 1994’te Topkapı–Zeytinburnu uzatmasıyla açıldı. Bazı T1 seferlerinin ara dönüş terminali olarak da işlev görmektedir.',
+    features: ['Atatürk Öğrenci Yurdu Çıkışı', 'D.100 Yaya Üstgeçit Bağlantısı', 'Depo Çıkış Hattı', 'Yüksek Kapasiteli Turnikeler'],
+    interchanges: []
+  },
+  'merkezefendi': {
+    id: 'merkezefendi',
+    name: 'Merkezefendi Station',
+    cleanName: 'Merkezefendi',
+    turkishName: 'Merkezefendi İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Zeytinburnu (Merkezefendi Mahallesi)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Mart 1994',
+    openedDateFormatted: '03-1994',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Merkezefendi_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Merkezefendi İstasyonu peronları ve tarihi külliye mevkii',
+    description: 'Tarihi Merkezefendi Külliyesi, Tıbbi Bitkiler Bahçesi ve Zeytinburnu geleneksel tıp festivali alanına hizmet verir.',
+    historicalContext: '10 Mart 1994’te açılmıştır. Sanayi alanlarının yerleşim ve kültür vadilerine dönüştüğü Merkezefendi bölgesinin ana toplu taşıma durağıdır.',
+    features: ['Merkezefendi Külliyesi Çıkışı', 'Tıbbi Bitkiler Bahçesi Erişimi', 'Engelli Rampaları', 'Geniş Yaya Yolu'],
+    interchanges: []
+  },
+  'seyitnizam – akşemsettin': {
+    id: 'seyitnizam-aksemsettin',
+    name: 'Seyitnizam – Akşemsettin Station',
+    cleanName: 'Seyitnizam – Akşemsettin',
+    turkishName: 'Seyitnizam – Akşemsettin İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Zeytinburnu (Seyitnizam Caddesi)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Mart 1994',
+    openedDateFormatted: '03-1994',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Seyitnizam_-_Ak%C5%9Femsettin_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Seyitnizam Caddesi boyunca uzanan T1 peronları',
+    description: 'Seyitnizam ve Akşemsettin mahallelerinin kesiştiği ticari caddede yer alan hemzemin tramvay durağıdır.',
+    historicalContext: '10 Mart 1994’te Topkapı–Zeytinburnu uzatmasıyla hizmete girmiştir.',
+    features: ['Mahalle Çarşısı Erişimi', 'Seyitnizam Camii Çıkışı', 'Engelli Rampası', 'Turnike Geçişleri'],
+    interchanges: []
+  },
+  'mithatpaşa': {
+    id: 'mithatpasa',
+    name: 'Mithatpaşa Station',
+    cleanName: 'Mithatpaşa',
+    turkishName: 'Mithatpaşa İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Zeytinburnu (Çırpıcı / Mithatpaşa)',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '10 Mart 1994',
+    openedDateFormatted: '03-1994',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mithatpa%C5%9Fa_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Çırpıcı Şehir Parkı yanındaki Mithatpaşa İstasyonu',
+    description: 'Çırpıcı Şehir Parkı ile Zeytinburnu konut ve tekstil atölyeleri bölgesine hizmet veren hemzemin tramvay durağıdır.',
+    historicalContext: '10 Mart 1994’te hizmete açılmıştır. Zeytinburnu aktarma merkezinden bir önceki duraktır.',
+    features: ['Çırpıcı Şehir Parkı Erişimi', 'Yerleşim Mahallesi Çıkışı', 'Turnike Girişleri'],
+    interchanges: []
+  },
+  'zeytinburnu': {
+    id: 'zeytinburnu-t1',
+    name: 'Zeytinburnu Station (T1)',
+    cleanName: 'Zeytinburnu',
+    turkishName: 'Zeytinburnu Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Bakırköy / Zeytinburnu Sınırı',
+    structureType: 'Hemzemin (Yüzeysel)',
+    platforms: 'Çapraz / Ada Peronları (4 Hat - M1 Ortak Peronu)',
+    openedDate: '10 Mart 1994',
+    openedDateFormatted: '03-1994',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zeytinburnu_Metro_%C4%B0stasyonu_M1%E1%B4%80_2024.jpg?width=1000',
+    imageCaption: 'Zeytinburnu Entegre Aktarma Merkezi ve T1 - M1 ortak peronları',
+    description: '10 Mart 1994’te T1 tramvayının buraya ulaşmasıyla Türkiye’nin ilk entegre metro-tramvay peron aktarma merkezi olmuştur. M1 hafif metrosuyla aynı seviyede doğrudan çapraz peron aktarması sunar.',
+    historicalContext: '10 Mart 1994’te Topkapı–Zeytinburnu etabının tamamlanmasıyla açıldı. 2006 yılında Güngören ve Bağcılar uzatması açılana kadar 12 yıl boyunca T1 hattının batı son durağı olmuştur.',
+    features: ['M1 Metrosu ile Aynı Seviyede Peron Aktarması', 'Yüksek Kapasiteli Bilet Holü', 'Tam Engelli Erişimi ve Asansörler', 'Büyük Şehir Meydanı'],
+    interchanges: [
+      {
+        lineCode: 'M1A',
+        lineName: 'M1A Yenikapı – Atatürk Havalimanı Metro Hattı',
+        type: 'metro',
+        color: '#EE2229',
+        stationName: 'Zeytinburnu M1 Metro Peronları',
+        transferType: 'Doğrudan Peron',
+        distance: '0m (Doğrudan Peron)',
+        walkingTime: 'Anında (Aynı Seviye)',
+        description: 'Peron hattından çıkmadan aynı peron seviyesinde M1A metrosuna doğrudan aktarma. Atatürk Havalimanı, Otogar ve Yenikapı yönü.'
+      }
+    ]
+  },
+  'mehmet akif': {
+    id: 'mehmet-akif-t1',
+    name: 'Mehmet Akif Station',
+    cleanName: 'Mehmet Akif',
+    turkishName: 'Mehmet Akif Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören (Mehmet Nesih Özmen)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mehmet_Akif_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Mehmet Akif İstasyonu T1 alçak taban peronu',
+    description: 'Mehmet Akif Ersoy Caddesi üzerinde yer alan istasyon, Şubat 2011 peron dönüşümüyle T1 Kabataş–Bağcılar kesintisiz hattına dahil edilmiştir.',
+    historicalContext: '14 Eylül 2006’da T2 hattı olarak açılan istasyonun peronları Şubat 2011’de alçaltılarak T1 hattında kullanılan yüzde 100 alçak tabanlı Alstom ve Bombardier tramvaylarına uyumlu hale getirilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Engelli Rampaları', 'İstanbulkart Dolum'],
+    interchanges: []
+  },
+  'merter tekstil merkezi': {
+    id: 'merter-tekstil-merkezi-t1',
+    name: 'Merter Tekstil Merkezi Station',
+    cleanName: 'Merter Tekstil Merkezi',
+    turkishName: 'Merter Tekstil Merkezi İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören (Merter Sanayi Bölgesi)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Merter_Tekstil_Merkezi_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Merter Tekstil Merkezi T1 Tramvay İstasyonu',
+    description: 'Türkiye’nin hazır giyim ve tekstil ihracat kalbi Merter bölgesine doğrudan hizmet veren T1 tramvay istasyonudur.',
+    historicalContext: 'Şubat 2011’de T1 ve T2 hatlarının birleştirilmesiyle istasyon peronları T1’in alçak tabanlı modern tramvay filosuna göre yeniden inşa edilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Merter Çarşıları Çıkışı', 'Turnike Alanı'],
+    interchanges: []
+  },
+  'güngören': {
+    id: 'gungoren-t1',
+    name: 'Güngören Station',
+    cleanName: 'Güngören',
+    turkishName: 'Güngören Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören (Merkez Mahallesi)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/G%C3%BCng%C3%B6ren_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Güngören ilçe merkezindeki T1 Tramvay İstasyonu',
+    description: 'Güngören ilçe meydanı ve yoğun ticaret caddelerine hizmet veren merkezi T1 istasyonudur.',
+    historicalContext: 'Şubat 2011’de (02-2011) istasyon peronları alçaltılarak T1 Kabataş–Bağcılar kesintisiz işletmesine entegre edilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'İlçe Çarşısı Erişimi', 'Engelli Uyumlu'],
+    interchanges: []
+  },
+  'akıncılar': {
+    id: 'akincilar-t1',
+    name: 'Akıncılar Station',
+    cleanName: 'Akıncılar',
+    turkishName: 'Akıncılar Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören (Akıncılar)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ak%C4%B1nc%C4%B1lar_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Akıncılar Mahallesi T1 durağı',
+    description: 'Abdi İpekçi Caddesi üzerindeki yerleşim ve ticaret alanına hizmet verir.',
+    historicalContext: 'Şubat 2011 birleşmesi kapsamında peron yüksekliği T1 alçak tabanlı tramvaylarına uygun hale getirilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Yaya Geçitleri', 'Turnike Alanı'],
+    interchanges: []
+  },
+  'soğanlı': {
+    id: 'soganli-t1',
+    name: 'Soğanlı Station',
+    cleanName: 'Soğanlı',
+    turkishName: 'Soğanlı Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören / Bahçelievler Sınırı',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/So%C4%9Fanl%C4%B1_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Soğanlı T1 durağı',
+    description: 'Güngören ile Bahçelievler Soğanlı mahallesi sınırında yer alan yoğun konut durağıdır.',
+    historicalContext: 'Şubat 2011’de T1 hattı standartlarına uygun olarak alçaltılmış peron yapısına dönüştürülmüştür.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Çift Taraflı Giriş', 'Engelli Erişimi'],
+    interchanges: []
+  },
+  'yavuz selim': {
+    id: 'yavuz-selim-t1',
+    name: 'Yavuz Selim Station',
+    cleanName: 'Yavuz Selim',
+    turkishName: 'Yavuz Selim Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Bağcılar (Yavuz Selim)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yavuz_Selim_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Bağcılar Yavuz Selim T1 İstasyonu',
+    description: 'Bağcılar ilçesi sınırındaki Yavuz Selim yerleşim bölgesine hizmet verir.',
+    historicalContext: 'Şubat 2011’de T1 ile birleşme sonrasında peronlar T1 araçlarına göre revize edilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Turnikeler', 'Rampa Geçişleri'],
+    interchanges: []
+  },
+  'güneştepe': {
+    id: 'gunestepe-t1',
+    name: 'Güneştepe Station',
+    cleanName: 'Güneştepe',
+    turkishName: 'Güneştepe Tramvay İstasyonu',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Güngören / Bağcılar (Güneştepe)',
+    structureType: 'Hemzemin (Alçaltılmış T1 Peronu)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/G%C3%BCne%C5%9Ftepe_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'Güneştepe T1 İstasyonu',
+    description: 'Güneştepe yerleşim alanına hizmet veren T1 tramvay durağıdır.',
+    historicalContext: 'Şubat 2011’de peronları alçaltılarak T1 hattının low-floor araçlarına entegre edilmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'Yaya Yolu Bağlantısı', 'Engelli Erişimi'],
+    interchanges: []
+  },
+  'bağcılar': {
+    id: 'bagcilar-t1',
+    name: 'Bağcılar Station',
+    cleanName: 'Bağcılar',
+    turkishName: 'Bağcılar Tramvay Terminali',
+    lineCode: 'T1',
+    lineName: 'T1 Kabataş – Bağcılar Tramvay Hattı',
+    district: 'Bağcılar (Meydan / İstanbul Caddesi)',
+    structureType: 'Hemzemin (Terminal / Makaslı Son İstasyon)',
+    platforms: '2 Kenar Peron (2 Hat)',
+    openedDate: '14 Eylül 2006 (02-2011 T1 Dönüşümü)',
+    openedDateFormatted: '02-2011',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C4%9Fc%C4%B1lar_Tramvay_%C4%B0stasyonu_T1.jpg?width=1000',
+    imageCaption: 'T1 Kabataş–Bağcılar hattının batı başlangıç terminali',
+    description: 'T1 Kabataş–Bağcılar tramvay hattının batı başlangıç ve bitiş terminalidir. 19.3 km’lik kesintisiz hattın son durağıdır.',
+    historicalContext: '14 Eylül 2006’da T2 terminali olarak hizmete açılmış; 3 Şubat 2011’de peronları alçaltılıp dönüştürülerek T1 hattı ile birleştirilmiş ve T1 Kabataş–Bağcılar hattının ana terminali haline gelmiştir.',
+    features: ['Alçak Tabanlı Peron Dönüşümü (02-2011)', 'M1B Bağcılar Meydan Metrosu Aktarması', 'Bağcılar Meydanı Çıkışı', 'Çift Hatlı Makas Sahası'],
+    interchanges: [
+      {
+        lineCode: 'M1B',
+        lineName: 'M1B Yenikapı – Kirazlı Metro Hattı',
+        type: 'metro',
+        color: '#EE2229',
+        stationName: 'Bağcılar Meydan Metro İstasyonu',
+        transferType: 'Cadde / Meydan Yürüyüşü',
+        distance: '300m',
+        walkingTime: '~4 dk yürüme',
+        description: 'Bağcılar Meydanı üzerinden M1B Kirazlı–Yenikapı metrosuna yaya geçişi.'
+      }
+    ]
+  }
+};
+
+/**
+ * Normalizes station name to lookup in T1 station database.
+ */
+export function getT1StationDetail(rawName: string): StationDetail | null {
+  if (!rawName) return null;
+  const clean = rawName
+    .replace(/\s+Station$/i, '')
+    .replace(/\s+İstasyonu$/i, '')
+    .replace(/\s*\(T1\)$/i, '')
+    .replace(/\s*\(M1\)$/i, '')
+    .trim()
+    .toLowerCase();
+
+  // Try exact lookup
+  if (T1_STATIONS_DATA[clean]) {
+    return T1_STATIONS_DATA[clean];
+  }
+
+  // Normalized characters (Turkish i / ı, etc.)
+  const normalizedClean = clean
+    .replace(/i̇/g, 'i')
+    .replace(/ı/g, 'i')
+    .replace(/ö/g, 'o')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ç/g, 'c')
+    .replace(/ğ/g, 'g');
+
+  for (const [key, val] of Object.entries(T1_STATIONS_DATA)) {
+    const normalizedKey = key
+      .replace(/i̇/g, 'i')
+      .replace(/ı/g, 'i')
+      .replace(/ö/g, 'o')
+      .replace(/ü/g, 'u')
+      .replace(/ş/g, 's')
+      .replace(/ç/g, 'c')
+      .replace(/ğ/g, 'g');
+
+    if (normalizedClean === normalizedKey || normalizedClean.includes(normalizedKey) || normalizedKey.includes(normalizedClean)) {
+      return val;
+    }
+  }
+
+  return null;
+}

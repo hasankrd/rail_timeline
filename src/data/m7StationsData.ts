@@ -1,0 +1,726 @@
+import { StationDetail } from './m1StationsData';
+
+export const M7_STATIONS_DATA: Record<string, StationDetail> = {
+  'mecidiyeköy': {
+    id: 'mecidiyekoy-m7',
+    name: 'Mecidiyeköy Station (M7)',
+    cleanName: 'Mecidiyeköy',
+    turkishName: 'Mecidiyeköy Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Şişli (Mecidiyeköy / Büyükdere Caddesi)',
+    structureType: 'Yeraltı (Derin Çok Katlı Transfer Merkezi)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Mecidiyeköy M7 istasyon bilet holü ve aktarma tünelleri',
+    description: 'M7 hattının 1. etabının doğu başlangıç terminalidir. M2 Yenikapı-Hacıosman metrosu ve Metrobüs hattına doğrudan yer altı bağlantı tüneli ile İstanbul’un en büyük aktarma merkezlerinden biridir.',
+    historicalContext: '28 Ekim 2020 tarihinde Avrupa Yakası’nın ilk sürücüsüz metrosu olarak hizmete açılmıştır.',
+    features: ['M2 Metro Hattına Doğrudan Yeraltı Aktarması', 'Metrobüs İstasyonuna Entegre Yeraltı Tüneli', 'Cevahir AVM ve Torun Center Bağlantısı', 'PAKS Peron Kapı Sistemi'],
+    interchanges: [
+      {
+        lineCode: 'M2',
+        lineName: 'M2 Yenikapı – Hacıosman Metro Hattı',
+        type: 'metro',
+        color: '#059A4D',
+        stationName: 'Şişli - Mecidiyeköy İstasyonu',
+        transferType: 'Doğrudan Yeraltı Bağlantı Tüneli',
+        distance: '60m',
+        walkingTime: '~1-2 dk yürüme',
+        description: 'M2 hattına doğrudan turnike içi yer altı aktarması.'
+      },
+      {
+        lineCode: 'Metrobüs',
+        lineName: 'Metrobüs (Söğütlüçeşme – Beylikdüzü Sondurak)',
+        type: 'rail',
+        color: '#FCD10D',
+        stationName: 'Mecidiyeköy Metrobüs Durağı',
+        transferType: 'Yeraltı Aktarma Tüneli ve Yürüyen Bantlar',
+        distance: '70m',
+        walkingTime: '~2 dk yürüme',
+        description: 'Metrobüs hattına kapalı tünel ve yürüyen bantlarla hızlı erişim.'
+      }
+    ]
+  },
+  'çağlayan': {
+    id: 'caglayan-m7',
+    name: 'Çağlayan Station',
+    cleanName: 'Çağlayan',
+    turkishName: 'Çağlayan Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Kâğıthane (Çağlayan / İstanbul Adliyesi)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'İstanbul Adalet Sarayı önündeki Çağlayan M7 İstasyonu',
+    description: 'İstanbul Çağlayan Adalet Sarayı ve Florence Nightingale Hastanesi’ne doğrudan hizmet verir. Metrobüs Çağlayan durağına yürüyüş mesafesindedir.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['İstanbul Adalet Sarayı Doğrudan Çıkışı', 'Metrobüs Çağlayan Durağı Bağlantısı', 'PAKS Peron Kapıları'],
+    interchanges: []
+  },
+  'kâğıthane': {
+    id: 'kagithane-m7',
+    name: 'Kâğıthane Station (M7)',
+    cleanName: 'Kâğıthane',
+    turkishName: 'Kâğıthane Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Kâğıthane (Merkez / Cendere Vadisi)',
+    structureType: 'Viyadük (Yükseltilmiş İstasyon / Kâğıthane Viyadüğü)',
+    platforms: '2 Kenar Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Cendere Vadisi üzerindeki Kâğıthane Metro Viyadüğü ve istasyonu',
+    description: 'Cendere Vadisi ve Kâğıthane Deresi üzerinde viyadük yapısında inşa edilmiş modern istasyondur. 2023 yılında açılan M11 Gayrettepe–İstanbul Havalimanı metrosuna doğrudan aktarma sağlar.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['M11 Havalimanı Metrosuna Aktarma', 'Cendere Vadisi Panoramik Viyadük Görünümü', 'Axis AVM ve Kâğıthane Belediyesi Çıkışları', 'PAKS'],
+    interchanges: [
+      {
+        lineCode: 'M11',
+        lineName: 'M11 Gayrettepe – İstanbul Havalimanı Metro Hattı',
+        type: 'metro',
+        color: '#A1609B',
+        stationName: 'Kâğıthane İstasyonu (M11)',
+        transferType: 'Cadde / Meydan Yürüyüş Yolu',
+        distance: '150m',
+        walkingTime: '~2-3 dk yürüme',
+        description: 'İstanbul Havalimanı’na ekspres metro bağlantısı.'
+      }
+    ]
+  },
+  'kagithane': {
+    id: 'kagithane-m7-alias',
+    name: 'Kâğıthane Station (M7)',
+    cleanName: 'Kâğıthane',
+    turkishName: 'Kâğıthane Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Kâğıthane (Merkez)',
+    structureType: 'Viyadük',
+    platforms: '2 Kenar Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Kâğıthane M7 İstasyonu',
+    description: 'Kâğıthane merkez metro istasyonudur.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['M11 Aktarması', 'PAKS'],
+    interchanges: []
+  },
+  'nurtepe': {
+    id: 'nurtepe-m7',
+    name: 'Nurtepe Station',
+    cleanName: 'Nurtepe',
+    turkishName: 'Nurtepe Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Kâğıthane (Nurtepe / Alibeyköy Baraj Yolu)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Nurtepe M7 İstasyonu meydan girişi',
+    description: 'Nurtepe ve Güzeltepe yerleşimlerine, Hacı Ethem Üktem İlkokulu ve çevredeki sosyal alanlara hizmet verir.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['Nurtepe Meydan Çıkışı', 'PAKS Peron Kapı Sistemi', 'Engelli Erişimi'],
+    interchanges: []
+  },
+  'alibeyköy': {
+    id: 'alibeykoy-m7',
+    name: 'Alibeyköy Station (M7)',
+    cleanName: 'Alibeyköy',
+    turkishName: 'Alibeyköy Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Alibeyköy / Alibeyköy Deresi)',
+    structureType: 'Viyadük (Yükseltilmiş İstasyon)',
+    platforms: '2 Kenar Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Alibeyköy Metro Viyadüğü ve T5 Tramvay aktarma meydanı',
+    description: 'Alibeyköy Deresi üzerinde viyadük yapısında yer alır. T5 Cibali-Alibeyköy Cep Otogarı tramvay hattına doğrudan alt meydandan aktarma imkanı sunar.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['T5 Tramvay Hattına Doğrudan Meydan Aktarması', 'Alibeyköy Çarşı ve Meydan Çıkışları', 'PAKS Peron Kapıları'],
+    interchanges: [
+      {
+        lineCode: 'T5',
+        lineName: 'T5 Eminönü – Alibeyköy Cep Otogarı Tramvay Hattı',
+        type: 'tram',
+        color: '#7B72B2',
+        stationName: 'Alibeyköy Metro Tramvay Durağı',
+        transferType: 'Meydan / Viyadük Altı Çıkışı',
+        distance: '40m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Haliç kıyısı boyunca Eyüpsultan, Feshane ve Eminönü yönüne tramvay aktarması.'
+      }
+    ]
+  },
+  'alibeykoy': {
+    id: 'alibeykoy-m7-alias',
+    name: 'Alibeyköy Station (M7)',
+    cleanName: 'Alibeyköy',
+    turkishName: 'Alibeyköy Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Alibeyköy)',
+    structureType: 'Viyadük',
+    platforms: '2 Kenar Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Alibeyköy M7 İstasyonu',
+    description: 'Alibeyköy M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['T5 Tramvay Aktarması', 'PAKS'],
+    interchanges: []
+  },
+  'çırçır': {
+    id: 'circir-m7',
+    name: 'Çırçır Station',
+    cleanName: 'Çırçır',
+    turkishName: 'Çırçır Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Çırçır Mahallesi / Alibeyköy İmar Blokları)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Çırçır M7 İstasyonu peron holü',
+    description: 'Çırçır Mahallesi ve Alibeyköy İmar Blokları konut yerleşimlerine hizmet veren derin tünel istasyonudur.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['Saya Hilal Camii ve İmar Blokları Çıkışları', 'PAKS Peron Kapı Sistemi'],
+    interchanges: []
+  },
+  'circir': {
+    id: 'circir-m7-alias',
+    name: 'Çırçır Station',
+    cleanName: 'Çırçır',
+    turkishName: 'Çırçır Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Çırçır)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Çırçır M7 İstasyonu',
+    description: 'Çırçır M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['PAKS'],
+    interchanges: []
+  },
+  'veysel karani - akşemsettin': {
+    id: 'veysel-karani-aksemsettin-m7',
+    name: 'Veysel Karani - Akşemsettin Station',
+    cleanName: 'Veysel Karani - Akşemsettin',
+    turkishName: 'Veysel Karani - Akşemsettin Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Akşemsettin / Veysel Karani)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Veysel Karani - Akşemsettin M7 İstasyonu turnike alanı',
+    description: 'Atatürk Bulvarı, Akşemsettin ve Veysel Karani mahallelerine, Vialand AVM ve Tema Parkı bölgesine hizmet sunar.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['Atatürk Bulvarı Çıkışları', 'Vialand Tema Parkı Bağlantısı', 'PAKS'],
+    interchanges: []
+  },
+  'yeşilpınar': {
+    id: 'yesilpinar-m7',
+    name: 'Yeşilpınar Station',
+    cleanName: 'Yeşilpınar',
+    turkishName: 'Yeşilpınar Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Yeşilpınar / Çırçır Sınırı)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Yeşilpınar M7 İstasyonu girişleri',
+    description: 'Yeşilpınar Mahallesi, İBB Yeşilpınar Sosyal Tesisleri ve çevredeki konut projelerine hizmet verir.',
+    historicalContext: '28 Ekim 2020 tarihinde hizmete girmiştir.',
+    features: ['Yeşilpınar Bölge Parkı Çıkışı', 'PAKS Peron Kapı Sistemi'],
+    interchanges: []
+  },
+  'yesilpinar': {
+    id: 'yesilpinar-m7-alias',
+    name: 'Yeşilpınar Station',
+    cleanName: 'Yeşilpınar',
+    turkishName: 'Yeşilpınar Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Eyüpsultan (Yeşilpınar)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Yeşilpınar M7 İstasyonu',
+    description: 'Yeşilpınar M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['PAKS'],
+    interchanges: []
+  },
+  'kâzım karabekir': {
+    id: 'kazim-karabekir-m7',
+    name: 'Kâzım Karabekir Station',
+    cleanName: 'Kâzım Karabekir',
+    turkishName: 'Kâzım Karabekir Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Gaziosmanpaşa (Kâzım Karabekir / Küçükköy)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Kâzım Karabekir M7 İstasyonu peron holü',
+    description: 'Gaziosmanpaşa Kâzım Karabekir Mahallesi, Hekimsuyu Caddesi ve Küçükköy aksına hizmet vermektedir.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['Hekimsuyu Caddesi Çıkışları', 'PAKS Peron Kapı Sistemi'],
+    interchanges: []
+  },
+  'kazim karabekir': {
+    id: 'kazim-karabekir-m7-alias',
+    name: 'Kâzım Karabekir Station',
+    cleanName: 'Kâzım Karabekir',
+    turkishName: 'Kâzım Karabekir Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Gaziosmanpaşa (Kâzım Karabekir)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Kâzım Karabekir M7 İstasyonu',
+    description: 'Kâzım Karabekir M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['PAKS'],
+    interchanges: []
+  },
+  'yenimahalle': {
+    id: 'yenimahalle-m7',
+    name: 'Yenimahalle Station (M7)',
+    cleanName: 'Yenimahalle',
+    turkishName: 'Yenimahalle Metro İstasyonu (Gaziosmanpaşa)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Gaziosmanpaşa (Yenimahalle / Cebeci Caddesi)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Gaziosmanpaşa Yenimahalle M7 İstasyonu girişi',
+    description: 'Gaziosmanpaşa Yenimahalle mevkiinde yer alan istasyon, bölgedeki yoğun konut ve eğitim alanlarına hizmet sunar.',
+    historicalContext: '28 Ekim 2020’de hizmete girmiştir.',
+    features: ['Cebeci Caddesi Çıkışları', 'PAKS Peron Kapıları'],
+    interchanges: []
+  },
+  'karadeniz mahallesi': {
+    id: 'karadeniz-mahallesi-m7',
+    name: 'Karadeniz Mahallesi Station (M7)',
+    cleanName: 'Karadeniz Mahallesi',
+    turkishName: 'Karadeniz Mahallesi Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Gaziosmanpaşa / Sultangazi Sınırı (Venezia Mega Outlet)',
+    structureType: 'Yeraltı (Büyük Çapraz Aktarma İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Venezia Mega Outlet ve T4 KİPTAŞ-Venezia tramvay aktarması',
+    description: 'Eski Edirne Asfaltı ve TEM Otoyolu Metris Kavşağı mevkisinde yer alır. T4 Topkapı-Mescid-i Selam tramvay hattı (KİPTAŞ-Venezia durağı) ve Venezia Mega Outlet ile doğrudan yeraltı bağlantısına sahiptir.',
+    historicalContext: '28 Ekim 2020 tarihinde açılan istasyon, T4 tramvayı ile M7 metrosunu bağlayan en kritik doğu-batı transfer noktasıdır.',
+    features: ['T4 KİPTAŞ-Venezia Tramvayına Doğrudan Yeraltı Aktarması', 'Venezia Mega Outlet AVM Bağlantısı', 'TEM Otoyolu Altgeçitleri', 'PAKS'],
+    interchanges: [
+      {
+        lineCode: 'T4',
+        lineName: 'T4 Topkapı – Mescid-i Selam Tramvay Hattı',
+        type: 'tram',
+        color: '#FF7E42',
+        stationName: 'KİPTAŞ - Venezia Tramvay İstasyonu',
+        transferType: 'Doğrudan Yeraltı Bağlantı Tüneli',
+        distance: '40m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Sultangazi ve Edirnekapı/Topkapı yönüne hafif raylı sistem aktarması.'
+      }
+    ]
+  },
+  'tekstilkent - giyimkent': {
+    id: 'tekstilkent-giyimkent-m7',
+    name: 'Tekstilkent - Giyimkent Station',
+    cleanName: 'Tekstilkent - Giyimkent',
+    turkishName: 'Tekstilkent - Giyimkent Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Esenler (Oruçreis / Tekstilkent / Giyimkent)',
+    structureType: 'Yeraltı (M7 Metro Depo ve Kumanda Merkezi Kompleksi)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Tekstilkent ve Giyimkent ticaret siteleri önündeki M7 İstasyonu',
+    description: 'Türkiye’nin en büyük tekstil ve giyim ticaret siteleri olan Tekstilkent ve Giyimkent’e hizmet verir. Aynı zamanda M7 hattının ana tren depo ve hat bakım atölyesi bu istasyon sahasında yer almaktadır.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['M7 Ana Kumanda Merkezi ve Tren Depo Sahası', 'Tekstilkent Plaza ve Giyimkent Çıkışları', 'Genişletilmiş Turnike Alanı', 'PAKS'],
+    interchanges: []
+  },
+  'oruç reis': {
+    id: 'oruc-reis-m7',
+    name: 'Oruç Reis Station',
+    cleanName: 'Oruç Reis',
+    turkishName: 'Oruç Reis Metro İstasyonu (Yüzyıl)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Bağcılar / Esenler (Yüzyıl / Oruçreis)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Oruç Reis M7 İstasyonu peron holü',
+    description: 'Bağcılar Yüzyıl Mahallesi ve Esenler Oruçreis Mahallesi sınırında, Matbaacılar Sitesi ve yoğun konut alanlarına hizmet sunar.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['Yüzyıl Mahallesi Çıkışı', 'Barbaros Caddesi Bağlantısı', 'PAKS'],
+    interchanges: []
+  },
+  'oruc reis': {
+    id: 'oruc-reis-m7-alias',
+    name: 'Oruç Reis Station',
+    cleanName: 'Oruç Reis',
+    turkishName: 'Oruç Reis Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Bağcılar (Yüzyıl)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Oruç Reis M7 İstasyonu',
+    description: 'Oruç Reis M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['PAKS'],
+    interchanges: []
+  },
+  'göztepe mahallesi': {
+    id: 'goztepe-mahallesi-m7',
+    name: 'Göztepe Mahallesi Station',
+    cleanName: 'Göztepe Mahallesi',
+    turkishName: 'Göztepe Mahallesi Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Bağcılar (Göztepe Mahallesi / Medipol Mega)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Göztepe Mahallesi M7 İstasyonu girişleri',
+    description: 'Bağcılar Göztepe Mahallesi, Maslak Caddesi ve Medipol Mega Üniversite Hastanesi bölgesine hizmet sağlar.',
+    historicalContext: '28 Ekim 2020 tarihinde açılmıştır.',
+    features: ['Medipol Mega Hastanesi Yakınlığı', 'Maslak Caddesi Çıkışları', 'PAKS'],
+    interchanges: []
+  },
+  'goztepe mahallesi': {
+    id: 'goztepe-mahallesi-m7-alias',
+    name: 'Göztepe Mahallesi Station',
+    cleanName: 'Göztepe Mahallesi',
+    turkishName: 'Göztepe Mahallesi Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Bağcılar (Göztepe)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Göztepe Mahallesi M7 İstasyonu',
+    description: 'Göztepe Mahallesi M7 metro istasyonudur.',
+    historicalContext: '28 Ekim 2020’de açılmıştır.',
+    features: ['PAKS'],
+    interchanges: []
+  },
+  'mahmutbey': {
+    id: 'mahmutbey-m7',
+    name: 'Mahmutbey Station (M7)',
+    cleanName: 'Mahmutbey',
+    turkishName: 'Mahmutbey Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Bağcılar (Mahmutbey / Göztepe / İnönü Caddesi)',
+    structureType: 'Yeraltı (Çok Katlı Çapraz Aktarma İstasyonu / Çift Dönüş Makasları)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: '28 Ekim 2020',
+    openedDateFormatted: '10-2020',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Mahmutbey M7 ve M3 ortak bilet holü ve aktarma tünelleri',
+    description: 'M7 hattının 1. etabının batı nihai terminalidir. M3 Kirazlı-Başakşehir/Metrokent metro hattı ile ortak yeraltı istasyon yapısına sahip olup turnike terk etmeden doğrudan çapraz peron ve bilet holü aktarması sunar.',
+    historicalContext: '28 Ekim 2020 tarihinde M7 hattının açılışıyla hizmete girerek bölgenin en büyük transfer üssü haline gelmiştir.',
+    features: ['M3 Kirazlı–Metrokent Hattına Doğrudan Yeraltı Aktarması', 'İnönü Caddesi ve Bosna Caddesi Çıkışları', 'PAKS Peron Kapı Sistemi', 'Engelli Asansörleri'],
+    interchanges: [
+      {
+        lineCode: 'M3',
+        lineName: 'M3 Kirazlı – Başakşehir/Metrokent Metro Hattı',
+        type: 'metro',
+        color: '#0CA6DF',
+        stationName: 'Mahmutbey İstasyonu (M3)',
+        transferType: 'Doğrudan Peron ve Yeraltı Bilet Holü',
+        distance: '30m',
+        walkingTime: '~1 dk yürüme',
+        description: 'M3 hattına doğrudan turnike terk etmeden ortak yeraltı yapısından aktarma.'
+      }
+    ]
+  },
+  'fulya': {
+    id: 'fulya-m7',
+    name: 'Fulya Station',
+    cleanName: 'Fulya',
+    turkishName: 'Fulya Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Şişli / Beşiktaş (Fulya / Dikilitaş)',
+    structureType: 'Yeraltı (Derin Tünel İstasyonu / 28m Derinlik)',
+    platforms: '1 Ada Peron (2 Hat)',
+    openedDate: '2 Ocak 2023',
+    openedDateFormatted: '01-2023',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Fulya M7 Metro İstasyonu peronları ve bilet holü',
+    description: 'Şişli ile Beşiktaş sınırında, Mevlüt Pehlivan Sokağı ve Fulya vadisinde yer alır. Acıbadem Fulya Hastanesi, Otim Sanat Merkezi ve Fulya konut yerleşimlerine konforlu yeraltı raylı ulaşımı sunar.',
+    historicalContext: '2 Ocak 2023 tarihinde M7 hattının Mecidiyeköy–Yıldız uzatması kapsamında hizmete açılmıştır.',
+    features: ['Fulya Vadisi ve Mecidiyeköy Bağlantısı', 'Acıbadem Fulya Hastanesi Yakınlığı', 'PAKS Tam Boy Peron Ayırıcı Kapıları', 'Derin Asansörler ve Yürüyen Merdivenler'],
+    interchanges: []
+  },
+  'yıldız': {
+    id: 'yildiz-m7',
+    name: 'Yıldız Station',
+    cleanName: 'Yıldız',
+    turkishName: 'Yıldız Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Beşiktaş (Yıldız / Cihannüma / Barbaros Bulvarı)',
+    structureType: 'Yeraltı (İstanbul’un En Derin Metro İstasyonu / 71m Derinlik / 7 Kat)',
+    platforms: '1 Ada Peron (2 Hat)',
+    openedDate: '2 Ocak 2023',
+    openedDateFormatted: '01-2023',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Yıldız M7 İstasyonu devasa yürüyen merdiven kuyuları ve peron alanı',
+    description: '71 metre yer altı derinliğiyle İstanbul’un en derin metro istasyonudur. Barbaros Bulvarı altında, Yıldız Teknik Üniversitesi (YTÜ) Yıldız Kampüsü, Yıldız Sarayı ve Beşiktaş ilçe merkezine yürüme mesafesinde yer alır.',
+    historicalContext: '2 Ocak 2023 tarihinde Mecidiyeköy–Yıldız etabı olarak hizmete açılmıştır.',
+    features: ['71 Metreyle İstanbul’un En Derin İstasyonu', 'Yıldız Teknik Üniversitesi (YTÜ) Çıkışı', 'Barbaros Bulvarı ve Dikilitaş Çıkışları', 'Yüksek Hızlı Derin Kuyu Asansörleri'],
+    interchanges: [
+      {
+        lineCode: 'İETT',
+        lineName: 'Barbaros Bulvarı Otobüs Hatları',
+        type: 'tram',
+        color: '#F490B3',
+        stationName: 'Yıldız Teknik Üniversitesi Durağı',
+        transferType: 'Cadde / Bulvar Çıkışı',
+        distance: '30m',
+        walkingTime: '~1 dk yürüme',
+        description: 'Beşiktaş İskele, Levent ve Boğaz hattı yönüne otobüs aktarması.'
+      }
+    ]
+  },
+  'yildiz': {
+    id: 'yildiz-m7-alias',
+    name: 'Yıldız Station',
+    cleanName: 'Yıldız',
+    turkishName: 'Yıldız Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Yıldız – Mahmutbey Metro Hattı',
+    district: 'Beşiktaş (Yıldız / Barbaros Bulvarı)',
+    structureType: 'Yeraltı (En Derin İstasyon / 71m)',
+    platforms: '1 Ada Peron (2 Hat)',
+    openedDate: '2 Ocak 2023',
+    openedDateFormatted: '01-2023',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Yıldız Metro İstasyonu',
+    description: 'İstanbul’un en derin metro istasyonu olan Yıldız istasyonudur.',
+    historicalContext: '2 Ocak 2023 tarihinde açılmıştır.',
+    features: ['71m Derinlik', 'Yıldız Teknik Üniversitesi Çıkışı'],
+    interchanges: []
+  },
+  'bölge parkı': {
+    id: 'bolge-parki-m7',
+    name: 'Bölge Parkı Station',
+    cleanName: 'Bölge Parkı',
+    turkishName: 'Bölge Parkı Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Kabataş – Mahmutbey – Esenyurt Metro Hattı',
+    district: 'Bağcılar (Mahmutbey Mahallesi / İkitelli Caddesi)',
+    structureType: 'Yeraltı (Tünel İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: 'İnşaat Aşamasında (Hedef 2027-2028)',
+    openedDateFormatted: '2028',
+    imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Bölge Parkı Metro İstasyonu şantiye ve tünel alanı',
+    description: 'Mahmutbey Bölge Parkı ve İkitelli Caddesi kesişiminde yer alır. Bağcılar ile Küçükçekmece geçişinde kritik yerleşimlere erişim sağlar.',
+    historicalContext: 'M7 Mahmutbey - Esenyurt uzatması 1. etabı kapsamında inşa edilmektedir.',
+    features: ['Bölge Parkı Entegrasyonu', 'PAKS Peron Kapı Sistemi'],
+    interchanges: []
+  },
+  'atatürk mahallesi': {
+    id: 'ataturk-mahallesi-m7',
+    name: 'Atatürk Mahallesi Station (M7)',
+    cleanName: 'Atatürk Mahallesi',
+    turkishName: 'Atatürk Mahallesi Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Kabataş – Mahmutbey – Esenyurt Metro Hattı',
+    district: 'Küçükçekmece (Atatürk Mahallesi / ArenaPark)',
+    structureType: 'Yeraltı (Entegre Transfer İstasyonu)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: 'İnşaat Aşamasında (Hedef 2027-2028)',
+    openedDateFormatted: '2028',
+    imageUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Atatürk Mahallesi M7 & M9 Ortak Aktarma Merkezi',
+    description: 'Küçükçekmece Atatürk Mahallesi’nde, ArenaPark AVM yanında yer alan ve M9 Ataköy-Olimpiyat metro hattı ile yeraltı bağlantı tüneliyle entegre olan aktarma merkezidir.',
+    historicalContext: 'M9 istasyonu 18 Mart 2024’te açılmış olup, M7 etabı inşaat halindedir.',
+    features: ['M9 Ataköy - Olimpiyat Metrosuna Doğrudan Aktarma', 'ArenaPark AVM Bağlantısı', 'PAKS'],
+    interchanges: [
+      {
+        lineCode: 'M9',
+        lineName: 'M9 Ataköy – Olimpiyat Metro Hattı',
+        type: 'metro',
+        color: '#FCD10D',
+        stationName: 'Atatürk Mahallesi İstasyonu (M9)',
+        transferType: 'Yeraltı Aktarma Tüneli',
+        distance: '80m',
+        walkingTime: '~1-2 dk yürüme',
+        description: 'M9 hattı ile İkitelli Sanayi, Olimpiyat ve Bakırköy/Ataköy yönüne aktarma.'
+      }
+    ]
+  },
+  'toplu konutlar': {
+    id: 'toplu-konutlar-m7',
+    name: 'Toplu Konutlar Station',
+    cleanName: 'Toplu Konutlar',
+    turkishName: 'Toplu Konutlar Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Kabataş – Mahmutbey – Esenyurt Metro Hattı',
+    district: 'Küçükçekmece (Atakent Mahallesi / 1. Etap)',
+    structureType: 'Yeraltı',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: 'İnşaat Aşamasında (Hedef 2027-2028)',
+    openedDateFormatted: '2028',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Toplu Konutlar İstasyonu Atakent',
+    description: 'Küçükçekmece Atakent 1. Etap ve Halkalı Toplu Konutları sakinlerine hizmet veren merkezi istasyondur.',
+    historicalContext: 'M7 Mahmutbey - Hastane uzatması dahilinde yapımı sürmektedir.',
+    features: ['Atakent 1. Etap Çıkışları', 'Halkalı Toplu Konutları Erişimi', 'PAKS'],
+    interchanges: []
+  },
+  'tema park': {
+    id: 'tema-park-m7',
+    name: 'Tema Park Station (M7)',
+    cleanName: 'Tema Park',
+    turkishName: 'Tema Park Metro İstasyonu (M7)',
+    lineCode: 'M7',
+    lineName: 'M7 Kabataş – Mahmutbey – Esenyurt Metro Hattı',
+    district: 'Küçükçekmece (Atakent / Halkalı Stadı / Tema World)',
+    structureType: 'Yeraltı (Havalimanı Metrosu Aktarmalı)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: 'İnşaat Aşamasında (Hedef 2027-2028)',
+    openedDateFormatted: '2028',
+    imageUrl: 'https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Tema Park ve M11 Halkalı Stadı İstasyon Bölgesi',
+    description: 'Halkalı Stadı ve Tema World eğlence kompleksi yanında yer alan istasyon, M11 Gayrettepe - İstanbul Havalimanı - Halkalı metro hattı ile doğrudan aktarma oluşturur.',
+    historicalContext: 'M11 ile M7 hatlarının kesiştiği ana batı aksı aktarma merkezidir.',
+    features: ['M11 Havalimanı Metrosuna Doğrudan Aktarma', 'Halkalı Stadı Çıkışı', 'Tema World Bağlantısı', 'PAKS'],
+    interchanges: [
+      {
+        lineCode: 'M11',
+        lineName: 'M11 Gayrettepe – İstanbul Havalimanı – Halkalı Metro Hattı',
+        type: 'metro',
+        color: '#A1609B',
+        stationName: 'Halkalı Stadı / Tema Park İstasyonu (M11)',
+        transferType: 'Ortak Bilet Holü / Yeraltı Tüneli',
+        distance: '90m',
+        walkingTime: '~2 dk yürüme',
+        description: 'İstanbul Havalimanı ve Halkalı Marmaray yönüne aktarma.'
+      }
+    ]
+  },
+  'kanuni sultan süleyman hastanesi': {
+    id: 'kanuni-sultan-suleyman-m7',
+    name: 'Kanuni Sultan Süleyman Hastanesi Station',
+    cleanName: 'Kanuni Sultan Süleyman Hastanesi',
+    turkishName: 'Kanuni Sultan Süleyman Hastanesi Metro İstasyonu',
+    lineCode: 'M7',
+    lineName: 'M7 Kabataş – Mahmutbey – Esenyurt Metro Hattı',
+    district: 'Küçükçekmece (Atakent Mahallesi / Hastane Yerleşkesi)',
+    structureType: 'Yeraltı (Uzatmanın 1. Etap Batı Terminali)',
+    platforms: '1 Ada Peron (2 Hat - PAKS)',
+    openedDate: 'İnşaat Aşamasında (Hedef 2027-2028)',
+    openedDateFormatted: '2028',
+    imageUrl: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1000&auto=format&fit=crop&q=80',
+    imageCaption: 'Kanuni Sultan Süleyman EAH Metro İstasyonu',
+    description: 'M7 hattının 1. uzatma etabının batı nihai terminalidir. Türkiye’nin en büyük eğitim ve araştırma hastanelerinden biri olan Kanuni Sultan Süleyman EAH ana polikliniklerine doğrudan yer altından erişim sağlar.',
+    historicalContext: 'M7 Kabataş - Esenyurt hattının ilk işletme etabının son istasyonudur.',
+    features: ['Kanuni Sultan Süleyman Hastanesi Doğrudan Girişi', 'İETT Otobüs Aktarma Peronları', 'PAKS'],
+    interchanges: []
+  }
+};
+
+export function getM7StationDetail(name: string): StationDetail | null {
+  if (!name) return null;
+  const clean = name
+    .replace(/\s+Station$/i, '')
+    .replace(/\s+İstasyonu$/i, '')
+    .replace(/\s*\([A-Za-z0-9]+\)$/i, '')
+    .trim()
+    .toLowerCase();
+
+  for (const [key, detail] of Object.entries(M7_STATIONS_DATA)) {
+    if (clean === key || clean.includes(key) || key.includes(clean)) {
+      return detail;
+    }
+  }
+
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .replace(/i̇/g, 'i')
+      .replace(/ı/g, 'i')
+      .replace(/ö/g, 'o')
+      .replace(/ü/g, 'u')
+      .replace(/ş/g, 's')
+      .replace(/ç/g, 'c')
+      .replace(/ğ/g, 'g');
+
+  const normalizedClean = normalize(clean);
+
+  for (const [key, val] of Object.entries(M7_STATIONS_DATA)) {
+    const normalizedKey = normalize(key);
+    if (
+      normalizedClean === normalizedKey ||
+      normalizedClean.includes(normalizedKey) ||
+      normalizedKey.includes(normalizedClean)
+    ) {
+      return val;
+    }
+  }
+
+  if (normalizedClean.includes('fulya')) return M7_STATIONS_DATA['fulya'];
+  if (normalizedClean.includes('yildiz')) return M7_STATIONS_DATA['yıldız'];
+
+  return null;
+}
